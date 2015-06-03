@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+		<% if spree_user_signed_in? %>
+			<p>hello<%= spree_current_user.email %></p>
+			<p><%= link_to 'logout', spree.logout_path %></p>
+		<% else %>
+		<p><%= link_to 'sign in', spree.new_spree_user_session_path %>
+			<%= link_to 'sign up', spree.new_spree_user_registration_path %></p>
+		<% end %>
+	</header>
 
-<%= yield %>
+	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+
+	<%= yield %>
 
 </body>
 </html>
