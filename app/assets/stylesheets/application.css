@@ -16,6 +16,32 @@
 body{
 	/*max-width: 1266px;*/
 	background:#fff;
+
+/*	background-size: 1160px 912px;*/
+    font-family: courier new;
+}
+header p{
+    float: right;
+    padding: 0;
+    margin: 0;
+    color: #428bca;
+
+}
+header a{
+    color: #428bca;
+    text-decoration: none;
+    transition: .2s;
+}
+#caption{
+    margin: 10%;
+    font-size: 24px;
+}
+header a:hover{
+    color: #000;
+}
+header #greeting{
+    float: left;
+    clear: both;
     margin:0px;
 /*    padding: 0px;
 *//*	background-size: 1160px 912px;*/
@@ -30,6 +56,7 @@ body{
 }
 .wrapper_menu{
     width: 100%;
+
 }
 .signin_up_out{
   margin-right: 10%;

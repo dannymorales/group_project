@@ -1,0 +1,47 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+a{
+		font-family: courier new;
+		font-size: 16px;
+	}
+#logo {
+    margin-bottom: 10px;
+
+    img {
+      width: 50px;
+    }
+  }
+ .form-group {
+
+ 	.form-control{
+ 		width: 400px;
+ 	}
+ 	.btn btn-primary{
+ 		width: 100px;
+ 	}
+  }
+
+ .list-group{
+ 	.list-group-item{
+ 		border: 0px;
+
+ 	}
+ 	.list-group-item:hover{
+ 		background: none;
+ 		color: #428bca;
+ 	}
+ }
+.col-md-12{
+	a{
+		font-family: courier new;
+		font-size: 16px;
+	}
+	a:hover :focus{
+		background: white;
+	}
+}
+.panel-footer{
+	background: white;
+	border: none;
+}

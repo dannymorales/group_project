@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/spree-contrib/spree_mail_settings.git
+  revision: 9c0ffd29dc869d14d4d308fd0077bbac37c288e8
+  branch: 3-0-stable
+  specs:
+    spree_mail_settings (2.2.0)
+      spree_backend (~> 3.0.0)
+
+GIT
   remote: git://github.com/spree/spree_auth_devise.git
   revision: d2ee454e21746094d6e0bc79b9d4421b5849c20e
   branch: 3-0-stable
@@ -378,6 +386,7 @@ DEPENDENCIES
   spree_auth_devise!
   spree_gateway!
   spree_i18n!
+  spree_mail_settings!
   spree_simple_sales!
   spring
   sqlite3
