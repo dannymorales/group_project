@@ -11,24 +11,20 @@
 	<!-- <div class="menu">
  -->
  <div class="wrapper_menu">
-	 <div class="header">
+	<div class="header">
 		<a href="#" class="slideout-menu-toggle">Menu</a>
 	</div>
 	<div>
 		<% if spree_user_signed_in? %>
-			<p class="signin_up_out" >Hello <%= spree_current_user.email %></p>
-			<p class="signin_up_out" ><%= link_to 'logout', spree.logout_path %></p>
-		<% else %>
-			<p class="signin_up_out" ><%= link_to 'sign in', spree.new_spree_user_session_path %>
-			&nbsp;&nbsp;<%= link_to '  sign up', spree.new_spree_user_registration_path %></p>
+		<p id="greeting">Hello <%= spree_current_user.email %></p>
+		<p><%= link_to 'logout', spree.logout_path %></p>
+	<% else %>
+		<p><%= link_to 'login', spree.new_spree_user_session_path %> 
+	&nbsp;&nbsp;<%= link_to 'sign up', spree.new_spree_user_registration_path %></p>
 		<% end %>
 	</div>
 <div>
-
-
-  </head>
-  <header>
- 
+<header>
 		<div class="slideout-menu">
 			<h3><a href="#" class="slideout-menu-toggle">×</a></h3>
 			<ul>
@@ -38,20 +34,14 @@
 				<li><a><%= link_to 'Contact us', contact_path %></a></li>
  			</ul>
  		</div>
-	
-	
 </header>	
- <body>
- 
 	
 <%= yield %>
 
 	<p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-
 <!--/.header-->
-
 
 </body>
 </html>
