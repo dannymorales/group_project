@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
 
-
-  # root 'home#index'
-
-
   root to: 'home#index'
+  get '/about', to:'home#about'
+  get '/contact', to:'home#contact'
+
 
 
   # This line mounts Spree's routes at the root of your application.
