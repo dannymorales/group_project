@@ -17,7 +17,6 @@ body{
 	/*max-width: 1266px;*/
 	background:#fff;
     margin:0px;
-
 /*	background-size: 1160px 912px;*/
     /*font-family: courier new;*/
 }
@@ -26,7 +25,6 @@ header p{
     padding: 0;
     margin: 0;
     color: #428bca;
-
 }
 header a{
     color: #428bca;
@@ -100,8 +98,6 @@ header #greeting{
 	font-size:50px;
 }
 .menu{
-/*.menu{
->>>>>>> de94c104ccf42344a3a6c82c7197974e0c052b89
     position: fixed;
     top:100px;
     left: 0px;
@@ -111,8 +107,8 @@ header #greeting{
 	font-family: Helvetica;
 	color:rgb(124, 118, 118);
     background-color: rgba(124, 118, 118, 0.3);
-}*/
-/*.menu ul li{
+}
+.menu ul li{
     margin-left: -20px;
     height: 50px;
 }
@@ -124,10 +120,7 @@ header #greeting{
 }
 .menu ul li a {
 	text-decoration: none;
-<<<<<<< HEAD
-=======
 }
->>>>>>> de94c104ccf42344a3a6c82c7197974e0c052b89
 .wrapper_menu{
     max-width: 100%;
     margin: 0px;
@@ -141,8 +134,7 @@ header #greeting{
     margin-left: 70px;
     height: 200px;
     height: 100px;
-}*/
-
+}
 .wrapper_bgd{
   position: absolute;
   width: 1266px;

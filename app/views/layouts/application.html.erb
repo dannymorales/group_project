@@ -12,18 +12,18 @@
 		<a href="#" class="slideout-menu-toggle">Menu</a>
 	</div>
 	<div>
-		<% if spree_user_signed_in? %>
-			<p id="greeting">hello <%= spree_current_user.email %></p>
-			<p><%= link_to 'logout', spree.logout_path %></p>
-		<% else %>
-		<p><%= link_to 'login', spree.new_spree_user_session_path %> |
-			&nbsp;&nbsp;<%= link_to 'sign up', spree.new_spree_user_registration_path %></p>
-		<% end %>
+		
   <header>
 		<div class="slideout-menu">
 			<h3><a href="#" class="slideout-menu-toggle">×</a></h3>
 			<ul>
-				<li><a>Home</a></li>
+			<% if spree_user_signed_in? %>
+			<li>Hello <%= spree_current_user.email %></li>
+			<li><%= link_to 'logout', spree.logout_path %></li>
+		<% else %>
+			<li><%= link_to 'login', spree.new_spree_user_session_path %> 
+		<% end %>
+				<li><a><%= link_to 'Home ', root_path%></a></li>
 				<li><a><%= link_to 'Gallery', spree.products_path%></a></li>
 				<li><a><%= link_to 'About us', about_path %></a></li>
 				<li><a><%= link_to 'Contact us', contact_path %></a></li>
