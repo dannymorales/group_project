@@ -5,8 +5,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
-<link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
 
 </head>
 <body>
@@ -14,35 +12,27 @@
  -->
  <div class="wrapper_menu">
 	 <div class="header">
-		<a href="#" class="slideout-menu-toggle"><i class="fa fa-bars"></i>Menu</a>
+		<a href="#" class="slideout-menu-toggle">Menu</a>
 	</div>
-		<!--/.slideout-menu-->
 	<div>
 		<% if spree_user_signed_in? %>
-			<p class="signin_up_out" >Hello <%= spree_current_user.email %></p>
-			<p class="signin_up_out" ><%= link_to 'logout', spree.logout_path %></p>
+			<p id="greeting">hello <%= spree_current_user.email %></p>
+			<p><%= link_to 'logout', spree.logout_path %></p>
 		<% else %>
-		<p class="signin_up_out" ><%= link_to 'sign in', spree.new_spree_user_session_path %>
-			&nbsp;&nbsp;<%= link_to '  sign up', spree.new_spree_user_registration_path %></p>
+		<p><%= link_to 'login', spree.new_spree_user_session_path %> |
+			&nbsp;&nbsp;<%= link_to 'sign up', spree.new_spree_user_registration_path %></p>
 		<% end %>
-	</div>
-<div>
-
-
-  </head>
   <header>
-		<div id="top_head">
-			  <div> Galleria  Afro </div>
-		</div>  
-		<nav class="menu" class="slideout-menu">
-			<h3>Menu <a href="#" class="slideout-menu-toggle">×</a></h3>
+		<div class="slideout-menu">
+			<h3><a href="#" class="slideout-menu-toggle">×</a></h3>
 			<ul>
-				<li><a href="#">Home <i class="fa fa-angle-right"></i></a></li>
-				<li><a href="#">Art products <i class="fa fa-angle-right"></i></a></li>
-				<li><a href="#">About us <i class="fa fa-angle-right"></i></a></li>
-				<li><a href="#">Contact us<i class="fa fa-angle-right"></i></a></li>
-			</ul>
-		</nav>
+				<li><a>Home</a></li>
+				<li><a><%= link_to 'Gallery', spree.products_path%></a></li>
+				<li><a><%= link_to 'About us', about_path %></a></li>
+				<li><a><%= link_to 'Contact us', contact_path %></a></li>
+ 			</ul>
+ 		</div>
+	
 	
 </header>	
  <body>
@@ -55,7 +45,6 @@
 
 
 <!--/.header-->
-
 
 </body>
 </html>
