@@ -5,32 +5,28 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+
 </head>
 <body>
-	<header>
+	<!-- <div class="menu">
+ -->
+ <div class="wrapper_menu">
+	 <div class="header">
+		<a href="#" class="slideout-menu-toggle"><i class="fa fa-bars"></i>Menu</a>
+	</div>
+		<!--/.slideout-menu-->
+	<div>
 		<% if spree_user_signed_in? %>
-			<p>hello<%= spree_current_user.email %></p>
-			<p><%= link_to 'logout', spree.logout_path %></p>
+			<p class="signin_up_out" >Hello <%= spree_current_user.email %></p>
+			<p class="signin_up_out" ><%= link_to 'logout', spree.logout_path %></p>
 		<% else %>
-		<p><%= link_to 'sign in', spree.new_spree_user_session_path %>
-			<%= link_to 'sign up', spree.new_spree_user_registration_path %></p>
+		<p class="signin_up_out" ><%= link_to 'sign in', spree.new_spree_user_session_path %>
+			&nbsp;&nbsp;<%= link_to '  sign up', spree.new_spree_user_registration_path %></p>
 		<% end %>
-	</header>
-
-	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-	<div class="menu">
-			<ul>
-			<li>Home</li>
-			<li>Galleries</li>
-			<li>About us</li>
-			<li>Contact</li>
-			</ul>
-		</div>
-
-	<%= yield %>
-
+	</div>
+<div>
 
 
   </head>
@@ -53,6 +49,13 @@
  
 	
 <%= yield %>
+
+	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+
+<!--/.header-->
+
 
 </body>
 </html>
