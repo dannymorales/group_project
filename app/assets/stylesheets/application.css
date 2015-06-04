@@ -91,11 +91,17 @@ header #greeting{
     color: #999;
     font-weight: 300;
 }
-
 .signin_up_out a:hover{
     color: #000;
 }
+.top_head{
+	font-family:Serif;
+	color: rgb(124, 118, 118);
+	font-size:50px;
+}
+.menu{
 /*.menu{
+>>>>>>> de94c104ccf42344a3a6c82c7197974e0c052b89
     position: fixed;
     top:100px;
     left: 0px;
@@ -118,7 +124,10 @@ header #greeting{
 }
 .menu ul li a {
 	text-decoration: none;
+<<<<<<< HEAD
+=======
 }
+>>>>>>> de94c104ccf42344a3a6c82c7197974e0c052b89
 .wrapper_menu{
     max-width: 100%;
     margin: 0px;
@@ -370,6 +379,68 @@ header #greeting{
     .cb-slideshow li div h3 { font-size: 80px }
 }
 
+    .slideout-menu {
+        width: 175px;
+        position: fixed;
+        top: 54px;
+        left: -250px;
+        height: 100%;
+        background: rgba(216, 212, 212, 0.4);
+        z-index: 100;
+    }
+    .slideout-menu .slideout-menu-toggle {
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        display: inline-block;
+        float:left;
+        padding: 6px 9px 5px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        line-height: 1;
+        color: #999;
+        text-decoration: none;
+        vertical-align: top;
+    }
+  /*  .slideout-menu .slideout-menu-toggle:hover {
+        color: #fff;
+    }*/
+    .slideout-menu ul {
+        margin-top: 54px;
+        list-style: none;
+        font-weight: 300;
+    }
+    .slideout-menu ul li a {
+        position: relative;
+        display: block;
+        padding: 10px;
+        color: #000;
+        text-decoration: none;
+    }
+    .slideout-menu ul li a:hover {
+        /*background: #000;*/
+        color: #fff;
+    }
+    .slideout-menu ul li a i {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        opacity: .5;
+    }
+    
+    .header {
+        padding: 11px;
+        background: rgba(0,0,0, 0.1);
+    }
+    .header .slideout-menu-toggle {
+        line-height: 30px;
+        font-size: 1.2em;
+        color: #999;
+        text-decoration: none;
+    }
+    .header .slideout-menu-toggle:hover {
+        color: #fff;
+    }
 .slideout-menu {
     width: 175px;
     position: fixed;
