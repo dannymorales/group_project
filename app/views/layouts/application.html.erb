@@ -21,7 +21,7 @@
 
 			<ul>
 				<li><a>Home</a></li>
-				<li><a><%= link_to 'Gallery', spree.products_path%></i></a></li>
+				<li><a><%= link_to 'Gallery', spree.products_path%></a></li>
 				<li><a><%= link_to 'About us', about_path %></a></li>
 				<li><a><%= link_to 'Contact us', contact_path %></a></li>
 			</ul>
@@ -33,8 +33,8 @@
 			<p class="signin_up_out" >Hello <%= spree_current_user.email %></p>
 			<p class="signin_up_out" ><%= link_to 'logout', spree.logout_path %></p>
 		<% else %>
-		<p class="signin_up_out" ><%= link_to 'sign in |', spree.new_spree_user_session_path %>
-			<%= link_to ' sign up', spree.new_spree_user_registration_path %></p>
+		<p class="signin_up_out" ><%= link_to 'sign in', spree.new_spree_user_session_path %>
+			&nbsp;&nbsp;<%= link_to '  sign up', spree.new_spree_user_registration_path %></p>
 		<% end %>
 	</div>
 <div>
