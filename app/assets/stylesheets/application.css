@@ -31,8 +31,7 @@ body{
 .wrapper_menu{
     width: 100%;
 }
-<<<<<<< HEAD
-=======
+
 .signin_up_out{
   margin-right: 10%;
   padding: 13px;
@@ -65,13 +64,11 @@ color: #000;
 .signin_up_out a:hover{
     color: #000;
 }
->>>>>>> 4e42cc19aba488352a8692b9b2e54846f771cfc9
 .top_head{
 	font-family:Serif;
 	color: rgb(124, 118, 118);
 	font-size:50px;
 }
-<<<<<<< HEAD
 .menu{
     position: fixed;
     top:100px;
@@ -95,12 +92,10 @@ color: #000;
 }
 .menu ul li a {
 	text-decoration: none;
-=======
 .wrapper_menu{
     max-width: 100%;
     margin: 0px;
     border:0px;
->>>>>>> 4e42cc19aba488352a8692b9b2e54846f771cfc9
 }
 .menu:hover{
     width: 200px;
@@ -413,4 +408,3 @@ color: #000;
     .header .slideout-menu-toggle:hover {
         color: #fff;
     }
->>>>>>> 4e42cc19aba488352a8692b9b2e54846f771cfc9
