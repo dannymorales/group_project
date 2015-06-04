@@ -144,10 +144,30 @@ header #greeting{
   z-index: 0;
 }
 .about_us{
-    width:400px;
-    display: block;
-   margin-left:200px;
-   text-align:justify;
+    max-width:100%;
+    text-align:justify;
+}
+.about_us h3{
+    text-align: center;
+    font-family: fantasy;
+}
+.about_us_pic {
+    width:200px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.col{
+    margin-left: 200px;
+}
+.col, .col2, .col3{
+     padding:40px;
+     float:left;
+     width: 200px;
+     display: inline-block;
+}
+.col_p{
+    width: 220px;
+    color: #5B5B5B;
 }
 .cb-slideshow{
 	list-style: none;
@@ -393,45 +413,6 @@ header #greeting{
         color: #999;
         text-decoration: none;
         vertical-align: top;
-    }
-  /*  .slideout-menu .slideout-menu-toggle:hover {
-        color: #fff;
-    }*/
-    .slideout-menu ul {
-        margin-top: 54px;
-        list-style: none;
-        font-weight: 300;
-    }
-    .slideout-menu ul li a {
-        position: relative;
-        display: block;
-        padding: 10px;
-        color: #000;
-        text-decoration: none;
-    }
-    .slideout-menu ul li a:hover {
-        /*background: #000;*/
-        color: #fff;
-    }
-    .slideout-menu ul li a i {
-        position: absolute;
-        top: 15px;
-        right: 10px;
-        opacity: .5;
-    }
-    
-    .header {
-        padding: 11px;
-        background: rgba(0,0,0, 0.1);
-    }
-    .header .slideout-menu-toggle {
-        line-height: 30px;
-        font-size: 1.2em;
-        color: #999;
-        text-decoration: none;
-    }
-    .header .slideout-menu-toggle:hover {
-        color: #fff;
     }
 .slideout-menu {
     width: 175px;
