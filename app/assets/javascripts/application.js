@@ -15,9 +15,7 @@
 //= require turbolinks
 //= require_tree .
 
-<<<<<<< HEAD
 
-=======
 $(document).ready(function () {
     $('.slideout-menu-toggle').on('click', function(event){
         event.preventDefault();
@@ -40,4 +38,3 @@ $(document).ready(function () {
         }
     });
 });
->>>>>>> 4e42cc19aba488352a8692b9b2e54846f771cfc9
