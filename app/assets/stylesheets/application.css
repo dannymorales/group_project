@@ -31,8 +31,6 @@ body{
 .wrapper_menu{
     width: 100%;
 }
-<<<<<<< HEAD
-=======
 .signin_up_out{
   margin-right: 10%;
   padding: 13px;
@@ -46,8 +44,8 @@ body{
   float: right;
 }
 .gallery_name a{
-text-decoration: none;
-color: #000;
+    text-decoration: none;
+    color: #000;
 
 }
 .gallery_name a:hover{
@@ -65,14 +63,7 @@ color: #000;
 .signin_up_out a:hover{
     color: #000;
 }
->>>>>>> 4e42cc19aba488352a8692b9b2e54846f771cfc9
-.top_head{
-	font-family:Serif;
-	color: rgb(124, 118, 118);
-	font-size:50px;
-}
-<<<<<<< HEAD
-.menu{
+/*.menu{
     position: fixed;
     top:100px;
     left: 0px;
@@ -82,8 +73,8 @@ color: #000;
 	font-family: Helvetica;
 	color:rgb(124, 118, 118);
     background-color: rgba(124, 118, 118, 0.3);
-}
-.menu ul li{
+}*/
+/*.menu ul li{
     margin-left: -20px;
     height: 50px;
 }
@@ -95,12 +86,11 @@ color: #000;
 }
 .menu ul li a {
 	text-decoration: none;
-=======
+}
 .wrapper_menu{
     max-width: 100%;
     margin: 0px;
     border:0px;
->>>>>>> 4e42cc19aba488352a8692b9b2e54846f771cfc9
 }
 .menu:hover{
     width: 200px;
@@ -110,8 +100,7 @@ color: #000;
     margin-left: 70px;
     height: 200px;
     height: 100px;
-}
-
+}*/
 
 .wrapper_bgd{
   position: absolute;
@@ -348,69 +337,66 @@ color: #000;
 @media screen and (max-width: 600px) { 
     .cb-slideshow li div h3 { font-size: 80px }
 }
-<<<<<<< HEAD
 
-=======
-    .slideout-menu {
-        width: 175px;
-        position: fixed;
-        top: 54px;
-        left: -250px;
-        height: 100%;
-        background: rgba(216, 212, 212, 0.4);
-        z-index: 100;
-    }
-    .slideout-menu .slideout-menu-toggle {
-        position: absolute;
-        top: 12px;
-        right: 10px;
-        display: inline-block;
-        float:left;
-        padding: 6px 9px 5px;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        line-height: 1;
-        color: #999;
-        text-decoration: none;
-        vertical-align: top;
-    }
-  /*  .slideout-menu .slideout-menu-toggle:hover {
-        color: #fff;
-    }*/
-    .slideout-menu ul {
-        margin-top: 54px;
-        list-style: none;
-        font-weight: 300;
-    }
-    .slideout-menu ul li a {
-        position: relative;
-        display: block;
-        padding: 10px;
-        color: #000;
-        text-decoration: none;
-    }
-    .slideout-menu ul li a:hover {
-        /*background: #000;*/
-        color: #fff;
-    }
-    .slideout-menu ul li a i {
-        position: absolute;
-        top: 15px;
-        right: 10px;
-        opacity: .5;
-    }
-    
-    .header {
-        padding: 11px;
-        background: rgba(0,0,0, 0.1);
-    }
-    .header .slideout-menu-toggle {
-        line-height: 30px;
-        font-size: 1.2em;
-        color: #999;
-        text-decoration: none;
-    }
-    .header .slideout-menu-toggle:hover {
-        color: #fff;
-    }
->>>>>>> 4e42cc19aba488352a8692b9b2e54846f771cfc9
+.slideout-menu {
+    width: 175px;
+    position: fixed;
+    top: 54px;
+    left: -250px;
+    height: 100%;
+    background: rgba(216, 212, 212, 0.4);
+    z-index: 100;
+}
+.slideout-menu .slideout-menu-toggle {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    display: inline-block;
+    float:left;
+    padding: 6px 9px 5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: #999;
+    text-decoration: none;
+    vertical-align: top;
+}
+/*  .slideout-menu .slideout-menu-toggle:hover {
+    color: #fff;
+}*/
+.slideout-menu ul {
+    margin-top: 52px;
+    list-style: none;
+    font-weight: 300;
+}
+.slideout-menu ul li a {
+    position: relative;
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+.slideout-menu ul li a:hover {
+    /*background: #000;*/
+    color: #fff;
+}
+.slideout-menu ul li a i {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    opacity: .5;
+}
+
+.header {
+    padding: 11px;
+    background: rgba(0,0,0, 0.1);
+}
+.header .slideout-menu-toggle {
+    line-height: 30px;
+    font-size: 1.2em;
+    color: #999;
+    text-decoration: none;
+}
+.header .slideout-menu-toggle:hover {
+    color: #fff;
+}
