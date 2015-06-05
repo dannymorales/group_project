@@ -14,10 +14,10 @@
  *= require_self
  */
 body{
-	/*max-width: 1266px;*/
-	background:#fff;
+    /*max-width: 1266px;*/
+    background:#fff;
     margin:0px;
-/*	background-size: 1160px 912px;*/
+/*  background-size: 1160px 912px;*/
     /*font-family: courier new;*/
 }
 header p{
@@ -43,7 +43,7 @@ header #greeting{
     clear: both;
     margin:0px;
 /*    padding: 0px;
-*//*	background-size: 1160px 912px;*/
+*//*    background-size: 1160px 912px;*/
 }
 .image_round{
     width: 50px;
@@ -93,9 +93,9 @@ header #greeting{
     color: #000;
 }
 .top_head{
-	font-family:Serif;
-	color: rgb(124, 118, 118);
-	font-size:50px;
+    font-family:Serif;
+    color: rgb(124, 118, 118);
+    font-size:50px;
 }
 .menu{
     position: fixed;
@@ -103,9 +103,9 @@ header #greeting{
     left: 0px;
     width: 200px;
     height: 241px;
-	font-size:20px;
-	font-family: Helvetica;
-	color:rgb(124, 118, 118);
+    font-size:20px;
+    font-family: Helvetica;
+    color:rgb(124, 118, 118);
     background-color: rgba(124, 118, 118, 0.3);
 }
 .menu ul li{
@@ -113,13 +113,13 @@ header #greeting{
     height: 50px;
 }
 .menu ul{
-	list-style: none;
+    list-style: none;
 }
 .menu ul li {
-	display:block;
+    display:block;
 }
 .menu ul li a {
-	text-decoration: none;
+    text-decoration: none;
 }
 .wrapper_menu{
     max-width: 100%;
@@ -144,35 +144,13 @@ header #greeting{
   z-index: 0;
 }
 .about_us{
-    max-width:100%;
-    text-align:justify;
-}
-.about_us h3{
-    text-align: center;
-    font-family: fantasy;
-}
-.about_us_pic {
-    width:200px;
-    border-radius: 50%;
-    display: inline-block;
-}
-.col{
-    margin-left: 200px;
-    color: #5B5B5B
-}
-.col, .col2, .col3{
-     padding:40px;
-     float:left;
-     width: 200px;
-     display: inline-block;
-     color: #5B5B5B
-}
-.col_p{
-    width: 220px;
-    color: #5B5B5B;
+    width:400px;
+    display: block;
+   margin-left:200px;
+   text-align:justify;
 }
 .cb-slideshow{
-	list-style: none;
+    list-style: none;
 }
 .cb-slideshow,
 .cb-slideshow:after { 
@@ -200,7 +178,7 @@ header #greeting{
     background-repeat: none;
     opacity: 0;
     z-index: 0;
-	-webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     -webkit-animation: imageAnimation 20s linear infinite 0s;
     -moz-animation: imageAnimation 20s linear infinite 0s;
     -o-animation: imageAnimation 20s linear infinite 0s;
@@ -383,7 +361,7 @@ header #greeting{
 }
 /* Show at least something when animations not supported */
 .no-cssanimations .cb-slideshow li span{
-	opacity: 1;
+    opacity: 1;
 }
 
 @media screen and (max-width: 1140px) { 
@@ -391,13 +369,18 @@ header #greeting{
 }
 @media screen and (max-width: 600px) { 
     .cb-slideshow li div h3 { font-size: 80px }
+    .gallery_name{
+        margin: 20px 2px;
+        font-size: 24px; 
+    }
+    
 }
 
-    .slideout-menu {
-        width: 175px;
+    /*.slideout-menu {
+        width: auto;
         position: fixed;
         top: 54px;
-        left: -250px;
+        left: -300px;
         height: 100%;
         background: rgba(216, 212, 212, 0.4);
         z-index: 100;
@@ -416,13 +399,52 @@ header #greeting{
         text-decoration: none;
         vertical-align: top;
     }
+  /*  .slideout-menu .slideout-menu-toggle:hover {
+        color: #fff;
+    }*/
+    /*.slideout-menu ul {
+        margin-top: 54px;
+        list-style: none;
+        font-weight: 300;
+    }*/
+    /*.slideout-menu ul li a {
+        position: relative;
+        display: block;
+        padding: 10px;
+        color: #000;
+        text-decoration: none;
+    }*/
+    /*.slideout-menu ul li a:hover {
+        background: #000;
+        color: #fff;
+    }*/
+    /*.slideout-menu ul li a i {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        opacity: .5;
+    }*/
+    
+  /*  .header {
+        padding: 11px;
+        background: rgba(0,0,0, 0.1);
+    }
+    .header .slideout-menu-toggle {
+        line-height: 30px;
+        font-size: 1.2em;
+        color: #999;
+        text-decoration: none;
+    }
+    .header .slideout-menu-toggle:hover {
+        color: #fff;
+    }*/
 .slideout-menu {
-    width: 175px;
+    width: auto;
     position: fixed;
-    top: 54px;
-    left: -250px;
+    top: 52px;
+    left: -270px;
     height: 100%;
-    background: rgba(216, 212, 212, 0.4);
+    background: rgba(216, 212, 212, 0.9);
     z-index: 100;
 }
 .slideout-menu .slideout-menu-toggle {
@@ -439,9 +461,9 @@ header #greeting{
     text-decoration: none;
     vertical-align: top;
 }
-/*  .slideout-menu .slideout-menu-toggle:hover {
-    color: #fff;
-}*/
+  .slideout-menu .slideout-menu-toggle:hover {
+    color: #b7b7b7;
+}
 .slideout-menu ul {
     margin-top: 52px;
     list-style: none;
@@ -455,14 +477,14 @@ header #greeting{
     text-decoration: none;
 }
 .slideout-menu ul li a:hover {
-    /*background: #000;*/
-    color: #fff;
+    background: #000;
+    color: #b7b7b7;
 }
 .slideout-menu ul li a i {
     position: absolute;
-    top: 15px;
+    top: 0px;
     right: 10px;
-    opacity: .5;
+    
 }
 
 .header {
@@ -476,5 +498,5 @@ header #greeting{
     text-decoration: none;
 }
 .header .slideout-menu-toggle:hover {
-    color: #fff;
+    color: #b7b7b7;
 }
