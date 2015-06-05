@@ -18,7 +18,7 @@
 			<h3><a href="#" class="slideout-menu-toggle">×</a></h3>
 			<ul>
 			<% if spree_user_signed_in? %>
-			<li>Hello <%= spree_current_user.email %></li>
+			<li class="user_email"><%= spree_current_user.email %></li>
 			<li><%= link_to 'logout', spree.logout_path %></li>
 		<% else %>
 			<li><%= link_to 'login', spree.new_spree_user_session_path %> 
@@ -28,17 +28,13 @@
 				<li><a><%= link_to 'About us', about_path %></a></li>
 				<li><a><%= link_to 'Contact us', contact_path %></a></li>
  			</ul>
- 		</div>
-	
-	
+ 		</div>	
 </header>	
  <body>
- 
 	
 <%= yield %>
 
-	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+	
 
 
 

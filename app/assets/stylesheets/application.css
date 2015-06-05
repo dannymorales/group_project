@@ -31,6 +31,20 @@ header a{
     text-decoration: none;
     transition: .2s;
 }
+.alert{
+    color:red;
+}
+.notice{
+    color: #999;
+  margin-left: 23%;
+  font-size: 32px;
+  font-family: fantasy;
+  text-shadow: 2px 1px 1px #000;
+}
+.user_email{
+    color: #999;
+  text-shadow: 1px 0px 0px #000;  
+}
 #caption{
     margin: 10%;
     font-size: 24px;
@@ -80,6 +94,7 @@ header #greeting{
 }
 .gallery_name a:hover{
   color: #999;
+   text-shadow: 2px 3px 2px #000;
 }
 .signin_up_out a{
     text-decoration: none;
