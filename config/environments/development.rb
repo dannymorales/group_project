@@ -49,7 +49,7 @@ Rails.application.configure do
     domain: ENV["smtp.mandrillapp.com"],
     authentication: "login",
     enable_starttls_auto: true,
-    user_name: ENV[""],
+    user_name: ENV["danny@gadaproductions.com"],
     password: ENV[""]
     }
 end
