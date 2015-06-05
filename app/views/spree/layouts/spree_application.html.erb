@@ -11,26 +11,29 @@
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     
+    <div class="wrapper_menu">
+      <div class="header">
+        <a href="#" class="menu-toggle">Menu</a>
+        <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+      </div>
+     <div>
     <%= render partial: 'spree/shared/google_analytics.js' %>
-    <%= render partial: 'spree/shared/header' %>
-  
-  <div class="wrapper_menu">
-   <div class="header">
-    <a href="#" class="menu-toggle">Menu</a>
-  </div>
-  <div>
 
   <div class="slideout">
       
       <ul>
        <% if spree_user_signed_in? %>
-      <li>Hello <%= spree_current_user.email %></li>
-      <li><%= link_to 'logout', spree.logout_path %></li>
+      <li>Hello <%= spree_current_user.email %>
+         <li><%= link_to 'logout', spree.logout_path %></li>
+          <li><%= link_to "My Account", account_path %></li>
+      </li>
     <% else %>
       <li><%= link_to 'login', spree.new_spree_user_session_path %> 
     <% end %>
         <li><a><%= link_to 'Home ', root_path%></a></li>
         <li><a><%= link_to 'Gallery', spree.products_path%></a></li>
+        <li><a><%= link_to 'About us', "/about" %></a></li>
+        <li><a><%= link_to 'Contact us', "/spree/contact" %></a></li>
       </ul>
     </div>
     
