@@ -453,6 +453,7 @@ ActiveRecord::Schema.define(version: 20150605155118) do
     t.datetime "updated_at",                          null: false
     t.boolean  "promotionable",        default: true
     t.string   "meta_title"
+    t.string   "artist_name"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on"
