@@ -210,6 +210,7 @@ GEM
     passenger (5.0.9)
       rack
       rake (>= 0.8.1)
+    pg (0.18.1)
     polyamorous (1.2.0)
       activerecord (>= 3.0)
     polyglot (0.3.5)
@@ -386,6 +387,7 @@ DEPENDENCIES
   jquery-rails
   mandrill-api
   passenger (~> 5.0.9)
+  pg
   rails (= 4.2.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
