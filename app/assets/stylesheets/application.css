@@ -45,17 +45,30 @@ header #greeting{
 /*    padding: 0px;
 *//*	background-size: 1160px 912px;*/
 }
+.intro{
+  line-height: 29px;
+  width: 484px;
+  height: 222px;
+  margin-left: 179px;
+  font-size: 23px;
+  font-family: fantasy;
+  text-align: center;
+  padding: 16px;
+  color: rgba(124, 118, 118, 1);
+  text-shadow: 1px 1px 10px rgba(190, 186, 186, 0);
+}
 .image_round{
     width: 50px;
     height:50px;
 }
 .gallery_name{
   font-size: 87px;
-   margin-left: 188px;
+  margin-left: 188px;
   margin-top: 96px;
   color: #000;
   text-shadow: 2px 3px 5px gray;
   font-family: fantasy;
+  margin-bottom: -57px;
 }
 .wrapper_menu{
     width: 100%;
