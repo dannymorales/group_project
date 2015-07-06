@@ -5,12 +5,40 @@
 <!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
 <!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
   <head data-hook="inside_head">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="app/assets/javascripts/application.js"></script>
     <%= render partial: 'spree/shared/head' %>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+    
+    <div class="wrapper_menu">
+      <div class="header">
+        <a href="#" class="menu-toggle">Menu</a>
+        <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+      </div>
+     <div>
     <%= render partial: 'spree/shared/google_analytics.js' %>
-    <%= render partial: 'spree/shared/header' %>
 
+  <div class="slideout">
+      
+      <ul>
+       <% if spree_user_signed_in? %>
+      <li>Hello <%= spree_current_user.email %>
+         <li><%= link_to 'logout', spree.logout_path %></li>
+          <li><%= link_to "My Account", account_path %></li>
+      </li>
+    <% else %>
+      <li><%= link_to 'login', spree.new_spree_user_session_path %> 
+    <% end %>
+        <li><a><%= link_to 'Home ', root_path%></a></li>
+        <li><a><%= link_to 'Gallery', spree.products_path%></a></li>
+        <li><a><%= link_to 'About us', "/about" %></a></li>
+        <li><a><%= link_to 'Contact us', "/spree/contact" %></a></li>
+      </ul>
+    </div>
+    
+</header> 
+    
     <div class="container">
       <div class="row" data-hook>
         <%= breadcrumbs(@taxon) %>
@@ -25,5 +53,33 @@
         <%= yield :templates %>
       </div>
     </div>
+
+    <script>
+      $(document).ready(function () {
+      
+    $('.menu-toggle').on('click', function(event){
+        $('.menu-toggle').html('close');
+        event.preventDefault();
+        // create menu variables
+        var slideoutMenu = $('.slideout');
+        var slideoutMenuWidth = $('.slideout').width();
+        
+        // toggle open class
+        slideoutMenu.toggleClass("open");
+        
+        // slide menu
+        if (slideoutMenu.hasClass("open")) {
+            slideoutMenu.animate({
+                left: "0px"
+            }); 
+        } else {
+            $('.menu-toggle').html("Menu")
+            slideoutMenu.animate({
+                left: -slideoutMenuWidth
+            }, 250);    
+        }
+    });
+});
+    </script>
   </body>
 </html>
